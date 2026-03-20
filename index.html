@@ -21,7 +21,21 @@ h2{font-size:30px;margin-bottom:15px}
 p{color:#555;line-height:1.6;margin-bottom:20px;max-width:400px}
 button{padding:10px 20px;border:none;background:#333;color:#fff;border-radius:20px;width:150px;cursor:pointer;transition:.3s}
 button:hover{background:#000}
-@media(max-width:768px){.grid{grid-template-columns:1fr}.img{height:300px}.content{padding:30px 20px}}
+@media(max-width:768px){
+  .grid{
+    display:flex;
+    flex-direction:column;
+  }
+  .img{
+    height:300px;
+  }
+  .content{
+    padding:30px 20px;
+  }
+  .grid > :nth-child(3){ order:4; } /* Egypt text */
+  .grid > :nth-child(4){ order:3; } /* Egypt image */
+
+}
 </style>
 
 </head>
